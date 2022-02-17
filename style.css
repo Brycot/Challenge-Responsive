@@ -103,7 +103,7 @@ main {
     align-items: center;
 }
 
-.credit-card__container div h1 {
+.credit-card__container .tittle h1 {
     color: var(--white-color);
     font-size: 2rem;
     font-weight: 500;
@@ -130,7 +130,6 @@ main {
     width: 100%;
     height: auto;
 }
-
 .credit-card__container .credit-card {
     width: 65%;
     height: 20rem;
@@ -141,10 +140,16 @@ main {
     background-position: center;
     border-radius: 20px;
 }
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .credit-card__container .arrows img {
     width: 1.4rem;
 }
+
 
 .card-brand {
     display: flex;
@@ -158,4 +163,20 @@ main {
 .credit-card__container .card-brand img:nth-child(2) {
     width: 1.6rem;
     height: 1.6rem;
+}
+.credit-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.credit-numbers h1 {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.credit-numbers h2 {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 200;
 }
