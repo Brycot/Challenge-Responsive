@@ -40,9 +40,11 @@ header {
 }
 main {
     width: 100%;
-    height: 94vh;
+    height: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 .icon {
     display: none;
@@ -96,7 +98,7 @@ main {
 
 /*credit card*/
 .credit-card-section {
-    padding: 1rem;
+    margin-top: 1rem;
     width: 90vw;
     height: 80vh;
 }
@@ -260,4 +262,224 @@ main {
 
 .nike img {
     background-color: #fff;
+}
+
+
+/* Tittle Income & Expenses*/
+
+.income-expenses {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.income-expenses__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.income-expense_tittle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.income-expense_tittle h1 {
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.income-expense_tittle div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    background-color: #1A2232;
+    width: 8rem;
+    height: 3.8rem;
+    border-radius: 8px;
+}
+.income-expense_tittle div p {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.income-expense_tittle img {
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+}
+
+/*Figure income & expenses*/
+
+.figure__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 16rem;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    gap: 1rem;
+    border: 3px solid var(--green-color);
+    box-shadow: 0px 0px 14px 0px #128c415b;
+}
+
+.figure h1{
+    color: var(--white-color);
+    font-size: 1.8rem;
+}
+.figure p{
+    color: var(--green-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/*income-outcome container*/
+
+.income-outcome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/*Income*/ 
+
+.income__container {
+    padding: 1.4rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 20rem;
+    height: auto;
+    background-color: var(--second-color);
+    border-radius: 18px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.37);
+}
+
+.arrow figure {
+    padding: 10px;
+    border-radius: 50%;
+    border-bottom: 6px solid #128c40;
+    border-left: 6px solid #128c40;
+    border-right: 6px solid #128c40;
+    border-top: 6px solid #0c0f17;
+    transform: rotate(-35deg);
+}
+.arrow figure img {
+    width: 18px;
+}
+
+.income__text {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.income__text h1 {
+    color: var(--grey-color);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.income__text p {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+/*Outcome*/ 
+
+.outcome__container {
+    padding: 1.4rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 20rem;
+    height: auto;
+    background-color: var(--background-color);
+    border-radius: 18px;
+    border: 2px solid var(--second-color);
+    align-self: flex-end;
+}
+
+.outcome__arrow figure {
+    padding: 10px;
+    border-radius: 50%;
+    border-bottom: 6px solid #151B28;
+    border-left: 6px solid #151B28;
+    border-right: 6px solid var(--azul-bonitoxd);
+    border-top: 6px solid #151B28;
+    transform: rotate(-35deg);
+}
+.outcome__arrow figure img {
+    width: 18px;
+}
+
+.outcome__text {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.outcome__text h1 {
+    color: var(--grey-color);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.outcome__text p {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+/*income expenses*/
+
+
+
+/*income expenses activities*/
+
+.income-expenses__activities {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    gap: 16px;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid var(--second-color);
+}
+
+.income-expenses__activities figure {
+    margin: 0;
+}
+.income-expenses__activities figure img {
+    width: 30px;
+    height: 30px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+.income-expenses__activities p{
+    font-size: 1.4rem;
+    color: var(--grey-color);
+}
+
+.income-expenses__activities p:nth-child(4){
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1.4rem;
 }
