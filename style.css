@@ -44,7 +44,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .icon {
     display: none;
@@ -100,7 +100,7 @@ main {
 .credit-card-section {
     margin-top: 1rem;
     width: 90vw;
-    height: 80vh;
+    height: auto;
 }
 .credit-card__container {
     display: flex;
@@ -269,7 +269,7 @@ main {
 
 .income-expenses {
     width: 90vw;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -281,6 +281,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 }
 
 .income-expense_tittle {
@@ -450,7 +451,12 @@ main {
 
 /*income expenses*/
 
-
+.income-expenses__activities__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 /*income expenses activities*/
 
@@ -482,4 +488,104 @@ main {
     color: var(--white-color);
     font-weight: bold;
     font-size: 1.4rem;
+}
+
+/*Investment Section*/
+.investment {
+    width: 90vw;
+    height: auto;
+}
+.investment__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Investment tittle */
+.investment_tittle {
+    align-self: flex-start;
+}
+.investment_tittle h1 {
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/*crypto prices*/
+.crypto-prices {
+    width: 100%;
+    height: 21rem;
+    display: flex;
+    justify-content: space-around;
+}
+/* crypto-prices__Eth */
+
+.crypto-prices__Eth {
+    padding: 20px 14px 30px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 128px;
+    height: 186px;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    align-self: flex-end;
+}
+.crypto-prices__Eth div img{
+    width: 26px;
+}
+
+.crypto-prices__Eth h1 {
+    color: var(--grey-color);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+.crypto-prices__Eth div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.crypto-prices__Eth div h1 {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* crypto-prices__BTC */
+
+.crypto-prices__btc {
+    padding: 20px 14px 30px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 128px;
+    height: 186px;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.603);
+    align-self: flex-start;
+}
+.crypto-prices__btc div img{
+    width: 26px;
+}
+
+.crypto-prices__btc h1 {
+    color: var(--grey-color);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+.crypto-prices__btc div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.crypto-prices__btc div h1 {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 1.8rem;
 }
