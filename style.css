@@ -589,3 +589,144 @@ main {
     font-weight: 700;
     font-size: 1.8rem;
 }
+
+/* Send money to */
+
+.sendmoneyto {
+    width: 90vw;
+    height: auto;
+}
+.sendmoneyto__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Send money to __ Tittle */
+
+.sendmoneyto__title {
+    align-self: flex-start;
+}
+.sendmoneyto__title h1 {
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Send money to __ Images */
+
+.sendmoneyto__images {
+    width: 100%;
+}
+.sendmoneyto__images figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sendmoneyto__images figure img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.sendmoneyto__images figure img:nth-child(2) {
+    width: 35px;
+    height: 35px;
+    outline: 2px solid #233dc7;
+    outline-offset: 4px;
+}
+.sendmoneyto__images figure img:nth-child(4) {
+    width: 45px;
+    height: 45px;
+    padding: 16px;
+    outline: 2px dashed #4a5269;
+    background-color: var(--second-color);
+}
+
+/* send money to __ select card */
+
+.sendmoneyto__selectcard{
+    width: 100%;
+    height: 8.4rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-color);
+    border-radius: 20px;
+}
+.sendmoneyto__selectcard div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sendmoneyto__selectcard div img {
+    width: 6rem;
+}
+.sendmoneyto__selectcard div h1 {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+.sendmoneyto__selectcard figure img {
+    width: 1.6rem;
+    transform: rotate(90deg);
+}
+
+/* send money to __ input */
+.form {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--second-color);
+    border-radius: 20px;
+}
+.form input {
+    width: 80%;
+    height: 60px;
+    color: var(--white-color);
+    background: none;
+    border: none;
+    outline: 0px;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.form .lbl-nombre {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.form .lbl-nombre:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form input:focus + .lbl-nombre .text-nomb,
+.form input:valid + .lbl-nombre .text-nomb {
+    transform: translateY(-350%);
+    font-size: 14px;
+    color: var(--grey-color);
+}
