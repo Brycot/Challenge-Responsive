@@ -59,7 +59,9 @@ main {
     height: 6vh;
 }
 
-
+.one-section {
+    width: 100%;
+}
 .options-navbar {
     width: 100%;
     height: 6vh;
@@ -89,17 +91,13 @@ main {
     position: absolute;
 }
 
-.perfil li a img {
-    padding: 2px;
-    border-radius: 50%;
-    border: 2px solid var(--azul-bonitoxd);
-}
 
 
 /*credit card*/
 .credit-card-section {
     margin-top: 1rem;
     width: 90vw;
+    max-width: 600px;
     height: auto;
 }
 .credit-card__container {
@@ -145,11 +143,13 @@ main {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 350px;
     height: auto;
     margin: 1.8rem 0;
 }
 .credit-card__container .credit-card {
-    width: 65%;
+    width: 19rem;
+    max-width: 190px;
     height: 20rem;
     padding: 2.5rem;
     background-image: url(./assets/brackground-credit-card.png);
@@ -269,6 +269,7 @@ main {
 
 .income-expenses {
     width: 90vw;
+    max-width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -319,7 +320,14 @@ main {
 }
 
 /*Figure income & expenses*/
-
+.figures__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 .figure__container {
     width: 100%;
     height: auto;
@@ -356,6 +364,7 @@ main {
 
 .income-outcome {
     width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -493,6 +502,7 @@ main {
 /*Investment Section*/
 .investment {
     width: 90vw;
+    max-width: 600px;
     height: auto;
 }
 .investment__container {
@@ -594,6 +604,7 @@ main {
 
 .sendmoneyto {
     width: 90vw;
+    max-width: 600px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -607,7 +618,9 @@ main {
 }
 
 /* Send money to __ Tittle */
-
+.sendmoneyto__title__container{
+    align-self: flex-start;
+}
 .sendmoneyto__title {
     align-self: flex-start;
 }
@@ -617,6 +630,15 @@ main {
     font-weight: 500;
 }
 
+/*Select container*/
+.select_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
 /* Send money to __ Images */
 
 .sendmoneyto__images {
@@ -647,9 +669,15 @@ main {
 }
 
 /* send money to __ select card */
-
+.card-money-select__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
 .sendmoneyto__selectcard{
     width: 100%;
+    max-width: 360px;
     height: 8.4rem;
     padding: 2rem;
     display: flex;
@@ -682,6 +710,7 @@ main {
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: 360px;
     height: 120px;
     position: relative;
     overflow: hidden;
@@ -735,6 +764,7 @@ main {
 
 .primary-button {
     width: 100%;
+    max-width: 360px;
     height: 70px;
     background-color: var(--azul-bonitoxd);
     border: 0;
@@ -742,4 +772,266 @@ main {
     color: var(--white-color);
     font-size: 2rem;
     font-weight: 500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+@media (min-width: 600px) {
+    .credit-card-section {
+        max-width: none;
+    }
+    .cards {
+        max-width: 350px;
+    }
+    .figures__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .select_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sendmoneyto__images {
+        width: 10%;
+    }
+    .sendmoneyto__images figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .sendmoneyto__images figure img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .card-money-select__container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+    }
+}
+@media (min-width: 800px) {
+    main {
+        width: 100%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .credit-card-section {
+        width: 48%;
+    }
+    .income-expenses {
+        width: 46%
+    }
+    .figures__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .select_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sendmoneyto__images {
+        width: 10%;
+    }
+    .sendmoneyto__images figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .sendmoneyto__images figure img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .card-money-select__container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+    }
+}
+
+@media (min-width: 1330px) {
+    body {
+        display: flex;
+    }
+    header {
+        border-right: 2px solid var(--second-color);
+        border-bottom: none;
+        width: 8%;
+
+        height: 100vh;
+    }
+    main {
+        padding-top: 10rem;
+        width: 92%;
+        max-width: none;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 0;
+    }
+    .icon {
+        display: block;
+        position: static;
+        margin-bottom: 3rem;
+    }
+    .icon img {
+        width: 3.8rem;
+    }
+    .navbar { 
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+    .one-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+        align-items: center;
+    }
+    .options-navbar {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 3rem;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+    }
+    
+    .navbar ul li img {
+        width: 2rem;
+    }
+    
+    .image-perfil {
+        display: none;
+        position: absolute;
+    }
+    
+    /* Perfil */
+    
+    .perfil {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: static;
+    }
+    .perfil li a img {
+        width: 2rem;
+    }
+    .perfil li:nth-child(2) a img {
+        width: 4.6rem;
+        padding: 2px;
+        border-radius: 50%;
+        border: 2px solid var(--azul-bonitoxd);
+    }
+
+    .credit-card-section {
+        max-width: none;
+        width: 350px;
+        order: 4;
+    }
+    .balance {
+        margin-top: 3rem;
+    }
+    .recently-activity-container {
+        margin-top: 7rem;
+    }
+    .income-send_column {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .income-expenses {
+        width: 400px;
+        max-width: 350px;
+    }
+    .income-expenses__container {
+        gap: 4rem;
+    }
+    .figures__container {
+        gap: 4rem;
+    }
+    .investment {
+        width: 300px;
+    }
+    .sendmoneyto {
+        width: 300px;
+    }
+    .select_container {
+        flex-direction: column;
+    }
+    .card-money-select__container {
+        width: 100%;
+    }
+    .sendmoneyto__selectcard {
+        height: 7.6rem;
+        width: 100%;
+    }
+    .sendmoneyto__images {
+        width: 100%;
+    }
+    .sendmoneyto__images figure {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+    }
+    .sendmoneyto__images figure img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .form {
+        height: 12rem;
+    }
+    .primary-button {
+        height: 6rem;
+    }
+    .crypto-prices {
+        justify-content: space-between;
+    }
 }

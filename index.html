@@ -14,16 +14,20 @@
 
 <header>
     <nav class="navbar">
-        <figure class="icon">
-            <img src="./assets/wallet.png" alt="">
-        </figure>
-        <ul class="options-navbar">
-            <li><a href="#"><img src="./assets/home.png" alt=""></a></li>
-            <li><a href="#"><img src="./assets/credit-card.png" alt=""></a></li>
-            <li><a href="#"><img src="./assets/increase.png" alt=""></a></li>
-            <li><a href="#"><img src="./assets/chat-bubble.png" alt=""></a></li>
-            <li><a href="#"><img src="./assets/perfil.png" alt="" class="image-perfil"></a></li>
-        </ul>
+        <div class="one-section">
+            <figure class="icon">
+                <img src="./assets/wallet.png" alt="">
+            </figure>
+            <ul class="options-navbar">
+                <li><a href="#"><img src="./assets/home.png" alt=""></a></li>
+                <li><a href="#"><img src="./assets/credit-card.png" alt=""></a></li>
+                <li><a href="#"><img src="./assets/increase.png" alt=""></a></li>
+                <li><a href="#"><img src="./assets/save-instagram.png" alt="" class="only-pc"></a></li>
+                <li><a href="#"><img src="./assets/chat-bubble.png" alt=""></a></li>
+                <li><a href="#"><img src="./assets/folder.png" alt="" class="only-pc"></a></li>
+                <li><a href="#"><img src="./assets/perfil.png" alt="" class="image-perfil"></a></li>
+            </ul>
+        </div>
         <ul class="perfil">
             <li><a href="#"><img src="./assets/setting.png" alt=""></a></li>
             <li><a href="#"><img src="./assets/perfil.png" alt=""></a></li>
@@ -31,7 +35,7 @@
     </nav>
 </header>
 
-<main>
+<main class="main_container">
     <section class="credit-card-section">
         <div class="credit-card__container">
             <div class="tittle">
@@ -99,6 +103,7 @@
             </div>
         </div>
     </section>
+    
     <section class="income-expenses">
         <div class="income-expenses__container">
             <div class="income-expense_tittle">
@@ -108,6 +113,8 @@
                     <img src="./assets/flecha-derecha.png" alt="">
                 </div>
             </div>
+
+            <div class="figures__container">
             <div class="figure__container">
                 <div class="figure">
                     <h1>
@@ -142,6 +149,7 @@
                         <p>- $445.00</p>
                     </div>
                 </div>
+            </div>
             </div>
             <div class="income-expenses__activities__container">
                 <div class="income-expenses__activities">
@@ -183,6 +191,7 @@
             </div>
         </div>
     </section>
+    <section class="income-send_column">
     <section class="investment">
         <div class="investment__container">
             <div class="investment_tittle">
@@ -208,38 +217,45 @@
     </section>
     <section class="sendmoneyto">
         <div class="sendmoneyto__container">
+            <div class="sendmoneyto__title__container">
             <div class="sendmoneyto__title">
                 <h1>Send money to</h1>
             </div>
-            <div class="sendmoneyto__images">
-                <figure>
-                    <img src="./assets/Profile-1.png" alt="">
-                    <img src="./assets/Profile-3.png" alt="">
-                    <img src="./assets/Profile-2.png" alt="">
-                    <img src="./assets/mas.png" alt="">
-                </figure>
             </div>
-            <div class="sendmoneyto__selectcard">
-                <div>
-                    <img src="./assets/simbolos.png" alt="">
-                    <h1>**** 2233</h1>
+            <div class="select_container">
+                <div class="sendmoneyto__images">
+                    <figure>
+                        <img src="./assets/Profile-1.png" alt="">
+                        <img src="./assets/Profile-3.png" alt="">
+                        <img src="./assets/Profile-2.png" alt="">
+                        <img src="./assets/mas.png" alt="">
+                    </figure>
                 </div>
-    
-                <figure>
-                    <img src="./assets/flecha-derecha.png" alt="">
-                </figure>
-            </div>
-            <form class="form">
-                <input type="text" required>
-                <label class="lbl-nombre">
-                    <span class="text-nomb">Enter the amount</span>
-                </label>
+                <div class="card-money-select__container">
+                    <div class="sendmoneyto__selectcard">
+                        <div>
+                            <img src="./assets/simbolos.png" alt="">
+                            <h1>**** 2233</h1>
+                        </div>
+            
+                        <figure>
+                            <img src="./assets/flecha-derecha.png" alt="">
+                        </figure>
+                    </div>
+                    <form class="form">
+                        <input type="number" required>
+                        <label class="lbl-nombre">
+                            <span class="text-nomb">Enter the amount</span>
+                        </label>
 
-            </form>
-            <button class="primary-button">
-                Send Money
-            </button>
+                    </form>
+                    <button class="primary-button">
+                        Send Money
+                    </button>
+                </div>
+            </div>
         </div>
+    </section>
     </section>
 </main>
 </body>
